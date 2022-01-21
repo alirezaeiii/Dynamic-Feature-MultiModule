@@ -9,15 +9,15 @@ import com.android.sample.common.base.BaseFragment
 import com.android.sample.common.util.ViewState
 import com.android.sample.feature.list.BR
 import com.android.sample.feature.list.R
-import com.android.sample.feature.list.databinding.FragmentMainBinding
 import com.android.sample.feature.list.di.DaggerDashboardComponent
 import com.android.sample.feature.list.di.DashboardModule
 import com.android.sample.feature.list.ui.LinkAdapter.OnClickListener
 import com.android.sample.feature.list.viewmodel.DashboardViewModel
 import com.android.sample.app.Application.Companion.coreComponent
+import com.android.sample.feature.list.databinding.FragmentDashboardBinding
 
-class DashboardFragment : BaseFragment<DashboardViewModel, FragmentMainBinding>
-    (R.layout.fragment_main, BR.vm) {
+class DashboardFragment : BaseFragment<DashboardViewModel, FragmentDashboardBinding>
+    (R.layout.fragment_dashboard, BR.vm) {
 
     /**
      * Initialize dagger injection dependency graph.
