@@ -46,11 +46,11 @@ class DashboardFragment : BaseFragment<DashboardViewModel, FragmentDashboardBind
                 }
             })
 
-        viewModel.liveData.observe(viewLifecycleOwner, { resource ->
+        viewModel.liveData.observe(viewLifecycleOwner) { resource ->
             if (resource is ViewState.Success) {
                 viewModelAdapter.submitList(resource.data?.links?.sections)
             }
-        })
+        }
 
         with(binding) {
             recyclerView.setHasFixedSize(true)
