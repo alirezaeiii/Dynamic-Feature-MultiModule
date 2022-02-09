@@ -20,11 +20,6 @@ fun <T> SwipeRefreshLayout.setSwipeRefreshLayout(viewState: ViewState<T>?) {
     isRefreshing = viewState is ViewState.Loading
 }
 
-@BindingAdapter("showData")
-fun <T> View.showData(viewState: ViewState<T>?) {
-    visibility = if (viewState is ViewState.Success) View.VISIBLE else View.GONE
-}
-
 @BindingAdapter("showError")
 fun <T> View.showError(viewState: ViewState<T>?) {
     visibility = if (viewState is ViewState.Error) View.VISIBLE else View.GONE
