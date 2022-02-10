@@ -78,9 +78,7 @@ class DashboardViewModelTest {
 
     @Test
     fun givenDaoReturnNull_whenGetResult_thenReturnErrorWithNullMessage() {
-        val dashboard = Dashboard(Links((emptyList())))
         `when`(dao.getDashboard()).thenReturn(null)
-        `when`(service.getDashboard()).thenReturn(Observable.just(dashboard))
 
         viewModel.liveData.value.let {
             assertThat(it, `is`(ViewState.Loading))
