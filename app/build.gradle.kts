@@ -36,11 +36,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 
     // Each feature module that is included in settings.gradle.kts is added here as dynamic feature
@@ -62,7 +62,7 @@ dependencies {
 
     implementation(Dependencies.KOTLIN)
     implementation(Dependencies.MATERIAL)
-    implementation(Dependencies.CONSTRAIN_LAYOUT)
+    implementation(Dependencies.CONSTRAINT_LAYOUT)
     implementation(Dependencies.NAVIGATION_FRAGMENT)
     implementation(Dependencies.NAVIGATION_UI)
     implementation(Dependencies.NAVIGATION_FEATURE)

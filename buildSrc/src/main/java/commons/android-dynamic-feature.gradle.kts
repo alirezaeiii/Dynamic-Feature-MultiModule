@@ -26,12 +26,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 
     dataBinding {
@@ -52,7 +52,7 @@ dependencies {
     implementation(Dependencies.CORE_KTX)
     implementation(Dependencies.NAVIGATION_FRAGMENT)
     implementation(Dependencies.NAVIGATION_UI)
-    implementation(Dependencies.CONSTRAIN_LAYOUT)
+    implementation(Dependencies.CONSTRAINT_LAYOUT)
     implementation(Dependencies.RECYCLE_VIEW)
     implementation(Dependencies.SWIPE_REFRESH_LAYOUT)
     implementation(Dependencies.DAGGER)
